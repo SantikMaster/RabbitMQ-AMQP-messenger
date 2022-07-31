@@ -1,0 +1,77 @@
+﻿  ChildMessager.cpp
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(710,5): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(709): message : while compiling class template member function 'void boost::asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>::operator ()(void)'
+          with
+          [
+              _Ty=boost::asio::detail::buffered_stream_storage::byte_type
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\type_traits(1478): message : see reference to function template instantiation 'void boost::asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>::operator ()(void)' being compiled
+          with
+          [
+              _Ty=boost::asio::detail::buffered_stream_storage::byte_type
+          ]
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(1299): message : see reference to class template instantiation 'boost::asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>' being compiled
+          with
+          [
+              _Ty=boost::asio::detail::buffered_stream_storage::byte_type
+          ]
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\detail\buffered_stream_storage.hpp(58): message : see reference to function template instantiation 'boost::asio::mutable_buffers_1 boost::asio::buffer<boost::asio::detail::buffered_stream_storage::byte_type,std::allocator<boost::asio::detail::buffered_stream_storage::byte_type>>(std::vector<boost::asio::detail::buffered_stream_storage::byte_type,std::allocator<boost::asio::detail::buffered_stream_storage::byte_type>> &) noexcept' being compiled
+  AMQPMessages.cpp
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(710,5): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(709): message : while compiling class template member function 'void boost::asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>::operator ()(void)'
+          with
+          [
+              _Ty=boost::asio::detail::buffered_stream_storage::byte_type
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\type_traits(1478): message : see reference to function template instantiation 'void boost::asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>::operator ()(void)' being compiled
+          with
+          [
+              _Ty=boost::asio::detail::buffered_stream_storage::byte_type
+          ]
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(1299): message : see reference to class template instantiation 'boost::asio::detail::buffer_debug_check<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>' being compiled
+          with
+          [
+              _Ty=boost::asio::detail::buffered_stream_storage::byte_type
+          ]
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\detail\buffered_stream_storage.hpp(58): message : see reference to function template instantiation 'boost::asio::mutable_buffers_1 boost::asio::buffer<boost::asio::detail::buffered_stream_storage::byte_type,std::allocator<boost::asio::detail::buffered_stream_storage::byte_type>>(std::vector<boost::asio::detail::buffered_stream_storage::byte_type,std::allocator<boost::asio::detail::buffered_stream_storage::byte_type>> &) noexcept' being compiled
+  RabbitMQms.cpp
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(710,5): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(709): message : while compiling class template member function 'void boost::asio::detail::buffer_debug_check<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>>::operator ()(void)'
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\type_traits(1478): message : see reference to function template instantiation 'void boost::asio::detail::buffer_debug_check<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>>::operator ()(void)' being compiled
+          with
+          [
+              _Elem=char
+          ]
+C:\libraries\boost_1_67_0_b1_rc2\boost\asio\buffer.hpp(1396): message : see reference to class template instantiation 'boost::asio::detail::buffer_debug_check<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>>' being compiled
+          with
+          [
+              _Elem=char
+          ]
+C:\Projects\RabbitMQ-AMQP-messenger\RabbitMQms.cpp(363): message : see reference to function template instantiation 'boost::asio::mutable_buffers_1 boost::asio::buffer<char,std::char_traits<char>,std::allocator<char>>(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) noexcept' being compiled
+  array.cpp
+  channel.cpp
+  channelimpl.cpp
+  connectionimpl.cpp
+  deferredcancel.cpp
+  deferredconfirm.cpp
+  deferredconsumer.cpp
+  deferredextreceiver.cpp
+  deferredget.cpp
+  deferredrecall.cpp
+  deferredreceiver.cpp
+  field.cpp
+  flags.cpp
+  inbuffer.cpp
+  receivedframe.cpp
+  table.cpp
+  tagger.cpp
+  Generating Code...
+  Compiling...
+  throttle.cpp
+  watchable.cpp
+  Generating Code...
+  Project1.vcxproj -> C:\Projects\RabbitMQ-AMQP-messenger\Project1\x64\Debug\Project1.lib

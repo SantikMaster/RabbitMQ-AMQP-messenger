@@ -1,3 +1,4 @@
+
 #ifndef TG_MGR_BASE_H_
 #define TG_MGR_BASE_H_
 #include <string>
@@ -84,7 +85,8 @@ public:
 	bool WaitForReady();
 	void SetLoginReady();
 	void Finit();
-	void OnErrMsg(std::string& msg);
+	void OnErrMsg(const std::string& msg);
+	
 
 private:
 	using error_code = boost::system::error_code;

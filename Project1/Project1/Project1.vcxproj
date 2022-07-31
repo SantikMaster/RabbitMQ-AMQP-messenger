@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bc5e82a2-eee7-4a91-804a-fe5882159e9d}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\RabbitMQ-AMQP-messenger\include;C:\libraries\boost_1_67_0_b1_rc2</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\libraries\boost_1_67_0_b1_rc2\lib64-msvc-14.1</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\RabbitMQ-AMQP-messenger\include;C:\libraries\boost_1_67_0_b1_rc2</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\libraries\boost_1_67_0_b1_rc2\lib64-msvc-14.1</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ChildMessager.cpp" />
+    <ClCompile Include="..\..\AMQPMessages.cpp" />
+    <ClCompile Include="..\..\RabbitMQms.cpp" />
+    <ClCompile Include="..\..\src\array.cpp" />
+    <ClCompile Include="..\..\src\channel.cpp" />
+    <ClCompile Include="..\..\src\channelimpl.cpp" />
+    <ClCompile Include="..\..\src\connectionimpl.cpp" />
+    <ClCompile Include="..\..\src\deferredcancel.cpp" />
+    <ClCompile Include="..\..\src\deferredconfirm.cpp" />
+    <ClCompile Include="..\..\src\deferredconsumer.cpp" />
+    <ClCompile Include="..\..\src\deferredextreceiver.cpp" />
+    <ClCompile Include="..\..\src\deferredget.cpp" />
+    <ClCompile Include="..\..\src\deferredrecall.cpp" />
+    <ClCompile Include="..\..\src\deferredreceiver.cpp" />
+    <ClCompile Include="..\..\src\field.cpp" />
+    <ClCompile Include="..\..\src\flags.cpp" />
+    <ClCompile Include="..\..\src\inbuffer.cpp" />
+    <ClCompile Include="..\..\src\receivedframe.cpp" />
+    <ClCompile Include="..\..\src\table.cpp" />
+    <ClCompile Include="..\..\src\tagger.cpp" />
+    <ClCompile Include="..\..\src\throttle.cpp" />
+    <ClCompile Include="..\..\src\watchable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ChildMessager.h" />
+    <ClInclude Include="..\..\AMQPmessages.h" />
+    <ClInclude Include="..\..\RabbitMQms.h" />
+    <ClInclude Include="..\..\src\basicackframe.h" />
+    <ClInclude Include="..\..\src\basiccancelframe.h" />
+    <ClInclude Include="..\..\src\basiccancelokframe.h" />
+    <ClInclude Include="..\..\src\basicconsumeframe.h" />
+    <ClInclude Include="..\..\src\basicconsumeokframe.h" />
+    <ClInclude Include="..\..\src\basicdeliverframe.h" />
+    <ClInclude Include="..\..\src\basicframe.h" />
+    <ClInclude Include="..\..\src\basicgetemptyframe.h" />
+    <ClInclude Include="..\..\src\basicgetframe.h" />
+    <ClInclude Include="..\..\src\basicgetokframe.h" />
+    <ClInclude Include="..\..\src\basicheaderframe.h" />
+    <ClInclude Include="..\..\src\basicnackframe.h" />
+    <ClInclude Include="..\..\src\basicpublishframe.h" />
+    <ClInclude Include="..\..\src\basicqosframe.h" />
+    <ClInclude Include="..\..\src\basicqosokframe.h" />
+    <ClInclude Include="..\..\src\basicrecoverasyncframe.h" />
+    <ClInclude Include="..\..\src\basicrecoverframe.h" />
+    <ClInclude Include="..\..\src\basicrecoverokframe.h" />
+    <ClInclude Include="..\..\src\basicrejectframe.h" />
+    <ClInclude Include="..\..\src\basicreturnframe.h" />
+    <ClInclude Include="..\..\src\bodyframe.h" />
+    <ClInclude Include="..\..\src\buffercheck.h" />
+    <ClInclude Include="..\..\src\channelcloseframe.h" />
+    <ClInclude Include="..\..\src\channelcloseokframe.h" />
+    <ClInclude Include="..\..\src\channelflowframe.h" />
+    <ClInclude Include="..\..\src\channelflowokframe.h" />
+    <ClInclude Include="..\..\src\channelframe.h" />
+    <ClInclude Include="..\..\src\channelopenframe.h" />
+    <ClInclude Include="..\..\src\channelopenokframe.h" />
+    <ClInclude Include="..\..\src\confirmframe.h" />
+    <ClInclude Include="..\..\src\confirmselectframe.h" />
+    <ClInclude Include="..\..\src\confirmselectokframe.h" />
+    <ClInclude Include="..\..\src\connectioncloseframe.h" />
+    <ClInclude Include="..\..\src\connectioncloseokframe.h" />
+    <ClInclude Include="..\..\src\connectionframe.h" />
+    <ClInclude Include="..\..\src\connectionopenframe.h" />
+    <ClInclude Include="..\..\src\connectionopenokframe.h" />
+    <ClInclude Include="..\..\src\connectionsecureframe.h" />
+    <ClInclude Include="..\..\src\connectionsecureokframe.h" />
+    <ClInclude Include="..\..\src\connectionstartframe.h" />
+    <ClInclude Include="..\..\src\connectionstartokframe.h" />
+    <ClInclude Include="..\..\src\connectiontuneframe.h" />
+    <ClInclude Include="..\..\src\connectiontuneokframe.h" />
+    <ClInclude Include="..\..\src\exchangebindframe.h" />
+    <ClInclude Include="..\..\src\exchangebindokframe.h" />
+    <ClInclude Include="..\..\src\exchangedeclareframe.h" />
+    <ClInclude Include="..\..\src\exchangedeclareokframe.h" />
+    <ClInclude Include="..\..\src\exchangedeleteframe.h" />
+    <ClInclude Include="..\..\src\exchangedeleteokframe.h" />
+    <ClInclude Include="..\..\src\exchangeframe.h" />
+    <ClInclude Include="..\..\src\exchangeunbindframe.h" />
+    <ClInclude Include="..\..\src\exchangeunbindokframe.h" />
+    <ClInclude Include="..\..\src\extframe.h" />
+    <ClInclude Include="..\..\src\headerframe.h" />
+    <ClInclude Include="..\..\src\heartbeatframe.h" />
+    <ClInclude Include="..\..\src\includes.h" />
+    <ClInclude Include="..\..\src\methodframe.h" />
+    <ClInclude Include="..\..\src\passthroughbuffer.h" />
+    <ClInclude Include="..\..\src\protocolheaderframe.h" />
+    <ClInclude Include="..\..\src\queuebindframe.h" />
+    <ClInclude Include="..\..\src\queuebindokframe.h" />
+    <ClInclude Include="..\..\src\queuedeclareframe.h" />
+    <ClInclude Include="..\..\src\queuedeclareokframe.h" />
+    <ClInclude Include="..\..\src\queuedeleteframe.h" />
+    <ClInclude Include="..\..\src\queuedeleteokframe.h" />
+    <ClInclude Include="..\..\src\queueframe.h" />
+    <ClInclude Include="..\..\src\queuepurgeframe.h" />
+    <ClInclude Include="..\..\src\queuepurgeokframe.h" />
+    <ClInclude Include="..\..\src\queueunbindframe.h" />
+    <ClInclude Include="..\..\src\queueunbindokframe.h" />
+    <ClInclude Include="..\..\src\receivedframe.h" />
+    <ClInclude Include="..\..\src\reducedbuffer.h" />
+    <ClInclude Include="..\..\src\returnedmessage.h" />
+    <ClInclude Include="..\..\src\transactioncommitframe.h" />
+    <ClInclude Include="..\..\src\transactioncommitokframe.h" />
+    <ClInclude Include="..\..\src\transactionframe.h" />
+    <ClInclude Include="..\..\src\transactionrollbackframe.h" />
+    <ClInclude Include="..\..\src\transactionrollbackokframe.h" />
+    <ClInclude Include="..\..\src\transactionselectframe.h" />
+    <ClInclude Include="..\..\src\transactionselectokframe.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

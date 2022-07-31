@@ -1,3 +1,4 @@
+
 #include "RabbitMQms.h"
 
 
@@ -172,7 +173,8 @@ void MyConnectionHandler::onData(AMQP::Connection *connection, const char *data,
 	}
 	catch (const std::exception&e)
 	{
-		m_pTcpMgr->OnErrMsg("Send Data error" + string(e.what()));
+		string err = "Send Data error" + string(e.what());
+		m_pTcpMgr->OnErrMsg(err );
 	}
 }
 
@@ -183,12 +185,15 @@ void MyConnectionHandler::onReady(AMQP::Connection *connection)
 
 void MyConnectionHandler::onError(AMQP::Connection *connection, const char *message)
 {
-	m_pTcpMgr->OnErrMsg("Error ..." + string(message));
+
+	string err = "Error ..." + string(message);
+	m_pTcpMgr->OnErrMsg(err);
 }
 
 void MyConnectionHandler::onClosed(AMQP::Connection *connection)
 {
-	m_pTcpMgr->OnErrMsg(string("RabbitMq closed"));
+	string err = "RabbitMq closed";
+	m_pTcpMgr->OnErrMsg(err);
 }
 
 TcpMgr::TcpMgr()
@@ -421,7 +426,7 @@ boost::shared_ptr<AMQP::Connection> TcpMgr::GetConnection()
 	return m_pConnect;
 }
 
-void TcpMgr::OnErrMsg(std::string& msg)
+void TcpMgr::OnErrMsg(const std::string& msg)
 {
 	m_pRabbitMQms->OnRtnErrMsg(msg);
 }
