@@ -2,20 +2,16 @@
 #include "ChildMessager.h"
 #include <iostream>
 
-
-
 void InfoInit(MqInfo& mq);
-
-
 
 namespace AMQPMessager
 {
-	class storage
+	class Storage
 	{
 	public:
-		storage() = default;
+		Storage() = default;
 		MqInfo mq;
-		TestBase rmq;
+		TestAMQP rmq;
 	};
 	void SendMessageToRabbit(const char* msg, unsigned int len)
 	{
@@ -25,7 +21,7 @@ namespace AMQPMessager
 		MqInfo mq;
 		InfoInit(mq);
 
-		TestBase rmq;
+		TestAMQP rmq;
 		if (rmq.Init(mq))
 		{
 			rmq.PublishMsg(str);
@@ -33,9 +29,11 @@ namespace AMQPMessager
 	}
 	Receiver::Receiver()
 	{
-		stor = new storage();
+		stor = new Storage();
 
 		InfoInit(stor->mq);
+		stor->rmq.SetStrPtr(Messages);
+		Messages = "";
 	}
 	void Receiver::ReceiveMessages()
 	{
@@ -48,7 +46,19 @@ namespace AMQPMessager
 	{
 		delete stor;
 	}
-	
+	void Receiver::Destroy()
+	{
+		delete this;
+	}
+	std::string Receiver::GetMessages()
+	{
+		return Messages;
+	}
+
+	extern "C" __declspec(dllexport) Receiver * create_klass()
+	{
+		return new Receiver;
+	}
 }
 void InfoInit(MqInfo& mq)
 	{
